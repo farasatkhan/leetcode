@@ -4,6 +4,7 @@ class Solution:
         l, r = 0, len(s) - 1
 
         while l < r:
+            # if a character is not alphanumeric we skip it.
             while l < r and not self.isAlphaNumeric(s[l]):
                 l += 1
             while l < r and not self.isAlphaNumeric(s[r]):
